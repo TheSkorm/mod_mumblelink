@@ -1,0 +1,27 @@
+Release Checklist:
+
+[ ] update version numbers in .java
+[ ] update README
+[ ]     version numbers
+[ ]     change log
+[ ]     tested platforms    
+[ ] Build Windows libs
+[ ] Build Ubuntu libs
+[ ] Build Class file 
+[ ]     recompile
+[ ]     reobf    
+[ ] zip files
+[ ] create md5
+[ ] tag version    
+[ ] upload files
+[ ] update "Latest Release" button
+[ ] update Thread 
+[ ]     update README
+[ ]     update main Download-Link (MD5, SHA1)
+[ ]     move old download to "Older Versions"
+[ ]     post update notice
+[ ] tracker aktualisieren
+
+
+
+
