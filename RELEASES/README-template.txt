@@ -1,6 +1,6 @@
-ReadMe for mod_MumbleLink v2.3.2 
+ReadMe for mod_MumbleLink v2.3.3 
 at http://www.minecraftforum.net/viewtopic.php?f=1032&t=235800
-by zsawyer, 2011-05-02
+by zsawyer, 2011-05-03
 
 
 
@@ -77,6 +77,7 @@ Notes:
 --- .minecraft/mods/MumbleLink/natives/mod_MumbleLink_x64.dll
 --- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.so
 --- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.so
+--- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.dylib
 -- placing the Libs from "MumbleLink/natives" into the execution directory 
     of your Minecraft executable will work as well
 
@@ -124,9 +125,10 @@ FAQ:
             - .minecraft/mods/MumbleLink/natives/mod_MumbleLink_x64.dll
             - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.so
             - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.so
+            - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.dylib
             
     "SEVERE: [MumbleLink{version}][ERROR] Required library could not be loaded, 
-                                     available libraries are incompatible!"
+            available libraries are incompatible!"
         None of the found libraries can be loaded on your system. Your operating
         system is not supported by this mod. Sorry. 
             Please try to compile the required libraries yourself or submit a 
@@ -166,14 +168,12 @@ FAQ:
         
 Tested Platforms:
 
-- Windows 7 Home Premium 64-bit 
-- elementaryos (ubuntu based) by theskorm - thank you
+- Windows 7 Home Premium 64-bit
 
 
 
 Known Issues:
 
-- Does not work under MacOSX due to missing libraries
 - Does not work with PRMumble(0.5Beta) even after copying the link.dll (1.2.0) 
     into PRMumble's plugin folder - it will say "linked" but the audio 
     will not be positional
@@ -181,6 +181,9 @@ Known Issues:
     
     
 Change Log:
+
+v2.3.3
+- update for MACOSX 32-Bit (added .dylib file)
 
 v2.3.2
 - recompiled with MCP3.1 + ModLoader
@@ -239,4 +242,5 @@ dalawrence      : Thanks for providing the source code of a similar project
                     (http://www.minecraftforum.net/viewtopic.php?f=1&t=41506) 
                     which helped in optimizing the DLLs and compiling for 
                     multiple platforms
-theskorm        : Thanks for helping with compiling for linux 64 bit version (and testing)                   
+theskorm        : Thanks for helping with compiling libraries for linux 64 bit 
+                    and providing a lib for MACOSX (and testing)
