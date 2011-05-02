@@ -13,10 +13,12 @@ Release Checklist:
 [ ]     version numbers
 [ ]     change log
 [ ]     tested platforms  
-[ ] commit release package
 
 [ ] zip files
 [ ] create md5
+
+[ ] commit release package
+
 [ ] upload files
 [ ] update "Latest Release" button
 
