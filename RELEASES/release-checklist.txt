@@ -6,6 +6,7 @@ Release Checklist:
 [ ]     reobf    
 [ ] Build Windows libs
 [ ] Build Ubuntu libs
+[ ] Build MACOSX libs
 [ ] tag version    
 
 [ ] update tracker
