@@ -28,8 +28,11 @@ Release Checklist:
 [ ] update "Latest Release" button
 
 [ ] update Thread 
+[ ]     update title
 [ ]     update README
 [ ]     update main Download-Link (MD5, SHA1)
+[ ]     update install instructions
+[ ]     update upgrade instructions
 [ ]     move old download to "Older Versions"
 [ ]     post update notice
 
