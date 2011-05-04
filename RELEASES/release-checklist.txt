@@ -29,11 +29,11 @@ Release Checklist:
 
 [ ] update Thread 
 [ ]     update title
+[ ]     move old download to "Older Versions"
 [ ]     update README
 [ ]     update main Download-Link (MD5, SHA1)
 [ ]     update install instructions
 [ ]     update upgrade instructions
-[ ]     move old download to "Older Versions"
 [ ]     post update notice
 
 
