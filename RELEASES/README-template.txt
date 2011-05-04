@@ -1,6 +1,6 @@
-ReadMe for mod_MumbleLink v2.3.3 
+ReadMe for mod_MumbleLink v2.3.4
 at http://www.minecraftforum.net/viewtopic.php?f=1032&t=235800
-by zsawyer, 2011-05-03
+by zsawyer, 2011-05-04
 
 
 
@@ -9,6 +9,8 @@ About:
 This is a minecraft mod based on ModLoader. It's purpose is to be able to use 
 Minecraft in conjunction with Mumble's positional audio feature. 
 (http://mumble.sourceforge.net/)
+This means: Directional and positionally attenuated VOIP in relation to 
+the game world. 
 It uses the Mumble Link Plugin v1.2.0 and adds native mumble support. 
 Tested with Mumble 1.2.2 and 1.2.3 .
 
@@ -78,6 +80,7 @@ Notes:
 --- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.so
 --- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.so
 --- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.dylib
+--- .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.dylib
 -- placing the Libs from "MumbleLink/natives" into the execution directory 
     of your Minecraft executable will work as well
 
@@ -106,7 +109,7 @@ FAQ:
 
 - Mumble does not Link:
     - in "ModLoader.txt" search for: 
-        "Mod Loaded: "mod_MumbleLink 2.3.2" from mod_MumbleLink.class" 
+        "Mod Loaded: "mod_MumbleLink {version}" from mod_MumbleLink.class" 
         - If this is missing the .class was either not copied to the correct 
             location: .minecraft/mods/MumbleLink/mod_MumbleLink.class                 
         - or your do not have ModLoader installed. 
@@ -126,6 +129,7 @@ FAQ:
             - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.so
             - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.so
             - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink.dylib
+            - .minecraft/mods/MumbleLink/natives/libmod_MumbleLink_x64.dylib
             
     "SEVERE: [MumbleLink{version}][ERROR] Required library could not be loaded, 
             available libraries are incompatible!"
@@ -181,6 +185,9 @@ Known Issues:
     
     
 Change Log:
+
+v2.3.4
+- update for MACOSX 64-Bit (added .dylib file)
 
 v2.3.3
 - update for MACOSX 32-Bit (added .dylib file)
@@ -243,4 +250,4 @@ dalawrence      : Thanks for providing the source code of a similar project
                     which helped in optimizing the DLLs and compiling for 
                     multiple platforms
 theskorm        : Thanks for helping with compiling libraries for linux 64 bit 
-                    and providing a lib for MACOSX (and testing)
+                    and providing libs for MACOSX (and testing)
