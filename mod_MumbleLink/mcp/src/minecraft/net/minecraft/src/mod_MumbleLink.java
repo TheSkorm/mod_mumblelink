@@ -92,7 +92,7 @@ public class mod_MumbleLink extends BaseMod {
     }
 
     @Override
-    public void OnTickInGame(Minecraft game) {
+    public boolean OnTickInGame(Minecraft game) {
         super.OnTickInGame(game);
         //ModLoader.getLogger().fine("[" + modName + modVersion "] caught game tick");
 
@@ -101,12 +101,13 @@ public class mod_MumbleLink extends BaseMod {
             // if retry of mumble init did not work
             if (!tryInitMumble()) {
                 // skip
-                return;
+                return true;
             }
         }
 
         // inform mumble of the current location
         updateMumble(game);
+	return true;
     }
 
     /**
